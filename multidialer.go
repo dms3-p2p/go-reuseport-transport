@@ -44,7 +44,7 @@ func (d *multiDialer) DialContext(ctx context.Context, network, addr string) (ne
 	//   1. A port in-use by a listener on an unspecified address (the most
 	//      general case).
 	//   2. A port in-use by a listener on the global address.
-	// 3. Fail on link-local dials (go-ipfs currently forbids this and I
+	// 3. Fail on link-local dials (go-dms3-fs currently forbids this and I
 	//    figured we could try lifting this restriction later).
 	//
 	//
